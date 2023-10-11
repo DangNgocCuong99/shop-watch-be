@@ -10,6 +10,6 @@ const cartSchema = new mongoose_1.default.Schema({
     quantity: Number,
     createdAt: { type: Date, default: Date.now }
 });
-const CartModel = mongoose_1.default.model('Cart', cartSchema);
+const CartModel = mongoose_1.default.model('cart', cartSchema);
 exports.default = CartModel;
 //# sourceMappingURL=cart.js.map

@@ -5,5 +5,5 @@ const favoriteSchema = new mongoose.Schema({
     createdAt: { type: Date, default: Date.now }
   });
 
- const FavoriteModel = mongoose.model('Favorite', favoriteSchema);
+ const FavoriteModel = mongoose.model('favorite', favoriteSchema);
  export default FavoriteModel

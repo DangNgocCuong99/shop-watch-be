@@ -6,5 +6,5 @@ const productSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-const ProductModel = mongoose.model('Product', productSchema);
+const ProductModel = mongoose.model('product', productSchema);
 export default ProductModel

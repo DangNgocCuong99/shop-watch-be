@@ -10,6 +10,6 @@ const productSchema = new mongoose_1.default.Schema({
     discountedPrice: Number,
     createdAt: { type: Date, default: Date.now }
 });
-const ProductModel = mongoose_1.default.model('Product', productSchema);
+const ProductModel = mongoose_1.default.model('product', productSchema);
 exports.default = ProductModel;
 //# sourceMappingURL=product.js.map

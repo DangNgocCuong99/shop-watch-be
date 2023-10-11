@@ -30,6 +30,7 @@ const DB = MODE === "online" ? DATABASE.replace("<password>", DATABASE_PASSWORD)
 app.use((0, cors_1.default)({}));
 app.use(express_1.default.json());
 app.use('/user', route_1.default);
+app.get('/user', (req, res) => { });
 app.use(function (req, res) {
     res.status(404).send({ url: req.originalUrl + " not found" });
 });

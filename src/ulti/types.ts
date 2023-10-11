@@ -9,3 +9,8 @@ export type IErrorReturn = {
     message?:string
 }
 
+export enum typeStatus {
+    inactive="inactive" ,
+    active="active" ,
+    delete="delete" 
+  }

@@ -9,6 +9,6 @@ const favoriteSchema = new mongoose_1.default.Schema({
     productId: { type: mongoose_1.default.Schema.Types.ObjectId, ref: 'Product' },
     createdAt: { type: Date, default: Date.now }
 });
-const FavoriteModel = mongoose_1.default.model('Favorite', favoriteSchema);
+const FavoriteModel = mongoose_1.default.model('favorite', favoriteSchema);
 exports.default = FavoriteModel;
 //# sourceMappingURL=favorite.js.map
