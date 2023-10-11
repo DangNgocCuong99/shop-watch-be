@@ -1,29 +1,30 @@
 {
-  "name": "todolistapi",
+  "name": "node_project",
   "version": "1.0.0",
-  "description": "RESTful todoListApi",
-  "main": "index.js",
+  "description": "",
+  "main": "dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "tsc && nodemon src/app.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "RESTful",
-    "API",
-    "Tutorial"
-  ],
-  "author": "Hoang Nguyen",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express-swagger-generator": "^1.1.17",
-    "nodemon": "^1.11.0"
+    "@types/express": "^4.17.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.5.2"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
+    "@types/cors": "^2.8.14",
+    "@types/mongoose": "^5.11.97",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.14.0",
-    "mongodb": "^6.1.0",
-    "mongoose": "^5.6.0"
+    "express": "^4.17.1",
+    "nodemon": "^3.0.1"
   }
 }
